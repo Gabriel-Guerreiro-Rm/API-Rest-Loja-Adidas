@@ -11,7 +11,6 @@ app.get('/', (req, res) => {
   res.send('Bem vindo! A API Loja da Adidas está no ar!');
 });
 
-// Rotas de categorias
 app.get('/categorias', async (req, res) => {
   try {
     const categorias = await prisma.categoria.findMany({
