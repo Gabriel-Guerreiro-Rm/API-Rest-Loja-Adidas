@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
- A API simula o backend de uma loja da Adidas, gerenciando produtos e suas respectivas categorias.
+A API simula o backend de uma loja da Adidas, gerenciando produtos e suas respectivas categorias.
 
 ## Tecnologias Utilizadas
 
@@ -11,36 +11,41 @@
 * PostgreSQL
 * Prisma
 
-## Como Executar o Projeto Localmentee
+## Link do Deploy na Nuvem
 
-1.  **Clone o repositório:**
+A API também está disponível online para testes:  
+[http://api-rest-loja-adidas-production-b8b1.up.railway.app](http://api-rest-loja-adidas-production-b8b1.up.railway.app)
+
+## Como Executar o Projeto Localmente
+
+1. **Clone o repositório:**
     ```bash
     git clone https://github.com/Gabriel-Guerreiro-Rm/API-Rest-Loja-Adidas.git
     ```
-2.  **Navegue até a pasta do projeto:**
+2. **Navegue até a pasta do projeto:**
     ```bash
     cd ../Api Loja Adidas
     ```
-3.  **Instale as dependências:**
+3. **Instale as dependências:**
     ```bash
     npm install
     ```
-4.  **Configure o ambiente:**
+4. **Configure o ambiente:**
     * Crie um arquivo `.env` na raiz do projeto, copiando usando a seguinte variável:
         ```env
         DATABASE_URL="postgresql://adidas_user:adidas_password@localhost:5432/adidas_db?schema=public"
         ```
     * Garanta que você tenha o Docker instalado e rodando.
     * Suba o container do banco de dados com: `docker-compose up -d`
-5.  **Execute as migrations do banco:**
+5. **Execute as migrations do banco:**
     ```bash
     npx prisma migrate dev
     ```
-6.  **Popule o banco com dados iniciais (Opcional):**
+6. **Popule o banco com dados iniciais (Opcional):**
     ```bash
     npx prisma db seed
     ```
-7.  **Inicie o servidor:**
+7. **Inicie o servidor:**
     ```bash
     npm run dev
     ```
