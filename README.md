@@ -15,18 +15,18 @@
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO_AQUI]
+    git clone https://github.com/Gabriel-Guerreiro-Rm/API-Rest-Loja-Adidas.git
     ```
 2.  **Navegue até a pasta do projeto:**
     ```bash
-    cd nome-da-pasta-do-projeto
+    cd ../Api Loja Adidas
     ```
 3.  **Instale as dependências:**
     ```bash
     npm install
     ```
 4.  **Configure o ambiente:**
-    * Crie um arquivo `.env` na raiz do projeto, copiando o conteúdo do arquivo `.env.example` (se você tiver um) ou usando a seguinte variável:
+    * Crie um arquivo `.env` na raiz do projeto, copiando usando a seguinte variável:
         ```env
         DATABASE_URL="postgresql://adidas_user:adidas_password@localhost:5432/adidas_db?schema=public"
         ```
