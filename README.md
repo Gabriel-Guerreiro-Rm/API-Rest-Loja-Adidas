@@ -11,7 +11,7 @@
 * PostgreSQL
 * Prisma
 
-## Como Executar o Projeto Localmente
+## Como Executar o Projeto Localmentee
 
 1.  **Clone o repositório:**
     ```bash
