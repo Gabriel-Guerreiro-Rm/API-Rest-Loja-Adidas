@@ -14,7 +14,7 @@ A API simula o backend de uma loja da Adidas, gerenciando produtos e suas respec
 ## Link do Deploy na Nuvem
 
 A API também está disponível online para testes:  
-[http://api-rest-loja-adidas-production-b8b1.up.railway.app](http://api-rest-loja-adidas-production-b8b1.up.railway.app)
+[http://api-rest-loja-adidas-production-f934.up.railway.app](http://api-rest-loja-adidas-production-f934.up.railway.app)
 
 ## Como Executar o Projeto Localmente
 
