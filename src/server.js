@@ -2,8 +2,8 @@ const express = require('express');
 const { PrismaClient } = require('@prisma/client');
 
 const app = express();
-const PORT = 3000;
 const prisma = new PrismaClient();
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
   res.send('Bem vindo! A API Loja da Adidas está no ar!');
 });
 
+// Rotas de categorias
 app.get('/categorias', async (req, res) => {
   try {
     const categorias = await prisma.categoria.findMany({
@@ -153,6 +154,6 @@ app.delete('/produtos/:id', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
